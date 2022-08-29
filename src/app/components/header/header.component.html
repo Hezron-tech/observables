@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Top Headlines</a>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+ 
+
+  <div class="container text-center">
+
+    <div *ngFor="let art of topHeadingDisplay" class="row">
+      <div class="col-sm">
+
+        <img src="{{art.urlToImage}}" alt="" width="300px">
+        <h5>{{art.title}}</h5>
+
+        <p>{{art.content}}</p>
+        <p>{{art.author}}</p>
+      <a href="{{art.url}}">Read More</a>
+    </div>
+  
+      
+     
+      </div>
+
+    </div>
+ 
+ 
+
+ 
